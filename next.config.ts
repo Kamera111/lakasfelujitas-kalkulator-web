@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",          // statikus export az out/ mappába
+  images: { unoptimized: true },
+  trailingSlash: true        // opcionális, de statikus útvonalakhoz jó
 };
 
 export default nextConfig;
